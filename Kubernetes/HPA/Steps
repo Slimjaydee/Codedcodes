@@ -1,0 +1,6 @@
+
+0 kubectl top nodes
+00 kubectl top pods
+1 kubectl get hpa
+2 kubectl run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -O- http://hpa-demo-deployment; done"
+3 kubectl get hpa --watch
